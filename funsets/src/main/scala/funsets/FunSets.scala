@@ -1,6 +1,5 @@
 package funsets
 
-
 /**
   * 2. Purely Functional Sets.
   */
@@ -20,7 +19,6 @@ object FunSets {
     * Returns the set of the one given element.
     */
   def singletonSet(elem: Int): Set = (x: Int) => x == elem
-
 
   /**
     * Returns the union of the two given sets,
@@ -44,7 +42,6 @@ object FunSets {
     * Returns the subset of `s` for which `p` holds.
     */
   def filter(s: Set, p: Int => Boolean): Set = (x: Int) => s(x) && p(x)
-
 
   /**
     * The bounds for `forall` and `exists` are +/- 1000.
